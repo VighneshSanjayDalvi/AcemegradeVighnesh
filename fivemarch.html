@@ -1,0 +1,74 @@
+<!-- position: sticky
+position sticky ;top=20px
+document.getElementById().value
+
+-->
+
+
+
+<html>
+    <head>
+        <title>Form designing 1st parctical</title>
+
+        <script>
+
+            function SentData(){
+
+                user_name=document.getElementById("Uname");
+                user_password=document.getElementById("Upass");
+
+
+                a=user_name.value;
+                b=user_password.value;
+
+                if (a==""){
+                    alert("Plz enter user name !")
+                }
+                
+                else if(b==""){
+                    alert("Plz enter password !")
+                }
+
+                else{
+                    alert("Submited Successfully")
+                
+                }
+
+            }
+        </script>
+
+        <style>
+
+            .divStyle{
+                background-color: rgb(11, 23, 126);
+                border-radius: 15%;
+                width: 300px;
+                height: auto;
+                padding: 20px;
+                color: beige;
+                margin-left: 40%;
+            }
+        </style>
+
+    </head>
+ 
+    <body>
+        <marquee behavior="scroll" direction="right"  >Practical 1       04/03/2022  By : Vighnesh Dalvi</marquee>
+        <div class="divStyle">
+            <form action="formA">
+
+                Username: <input type="text" id="Uname" placeholder="Enter your user name">
+                <br>
+
+                Password: <input type="password" name="Password" id="Upass" placeholder="Enter your password">
+                <br>
+                <input type="button" value="Submit" onclick="SentData()" >
+
+            </form>
+
+
+
+        </div>
+        
+    </body>
+</html>

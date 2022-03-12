@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>linking php</title>
+
+
+      
+            
+
+        <script>
+            function SendData(){
+
+                first_Name=document.getElementById("fnameid");  // first name
+                alert(first_Name);
+                last_name=document.getElementById("lnameid"); // last name
+                Gender=document.getElementById("Ugenderid"); // gender
+                comp=document.getElementById("CompEngid");  //Comp check box
+                mech=document.getElementById("MechEngid");
+                Civ=document.getElementById("CivEngid");
+                ele=document.getElementById("EleEngid");
+
+                a=first_Name.value;
+                b=last_name.value;
+                ugender=Gender.value;
+                computer=comp.value;
+                mechanics=mech.value;
+                civil=Civ.value;
+                electrical=ele.value;
+
+
+                if (a==""){
+                    alert("please enter Your name !")
+                }
+                else if (b==""){
+                    alert("Please enter your last name!")
+                }
+                else{
+                    alert("Sumitted successfully!")
+                }
+
+            }
+            
+        </script>
+
+        <style>
+            .divStyle{
+                border: 1ch;
+                background-color: rgb(21, 6, 107);
+                padding-left: 500px;
+                color: aliceblue;
+                height: 300px;
+                width: 200px;
+                padding : 40px
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>linking php on button</h1>
+
+        <div class="divStyle">
+            <form action="formA" >
+
+                First name: <input type="text" name="Fname" id="fnameid"><br>
+                Last name: <input type="text" name="Lname" id="lnameid"><br>
+
+                Gender : 
+                Male  <input type="radio" name="Ugender" id="genderid">
+                Female <input type="radio" name="Ugender" id="genderid">
+<br>
+                Select courses from below list:  <br>
+
+
+               
+                <input type="checkbox" name="CompEng" id="compid"> : Computer engineering <br>
+                
+                <input type="checkbox" name="MechEng" id="Mechid"> : Mechanical engineering<br>
+                
+                <input type="checkbox" name="CivEng" id="Civid"> : Civil engineering<br>
+                
+                <input type="checkbox" name="EleEng" id="Eleid"> : Electrical engineering<br>
+
+
+                Select your Percentage Category : 
+                <select name="ClassName" id="Classid">
+                    <option value="destinctionClass">Distinction (75% +)</option>
+                    <option value="firstClass">First Class (60%-75%)</option>
+                    <option value="secondClass">Second Class (50%-60%)</option>
+
+                </select>
+
+
+                <br>
+                <input type="button" onclick="SendData()" value="Submit" >
+
+
+            </form>
+        </div>
+    </body>
+</html>
